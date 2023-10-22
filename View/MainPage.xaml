@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MenteeFeed.View.MainPage">
+    <Grid>
+    <Grid.Background>
+        <LinearGradientBrush EndPoint="0,1">
+            <GradientStop Color="#2D1F30" Offset="0.02" />
+            <GradientStop Color="Black" Offset="1.0" />
+        </LinearGradientBrush>
+    </Grid.Background>
+
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <VerticalStackLayout
+        VerticalOptions="StartAndExpand"
+        Padding="15">
+        <Image
+            Source="rectangle.png"
+            SemanticProperties.Description="box for image"
+            HeightRequest="230"
+            WidthRequest="500"
+            HorizontalOptions="CenterAndExpand"/>
+        <Label FontSize="20"
+            HorizontalOptions="Start"
+            TextColor="White"
+            Text="Programming"/>
+        <Label FontSize="15"
+            HorizontalOptions="Start"
+            TextColor="#DADADA"
+            Text="Maria Sofia Castro"/>
+        <Label FontSize="15"
+            HorizontalOptions="Start"
+            TextColor="#DADADA"
+            Text="I will be your programming tutor Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            Margin="10"/>
+        <Image
+            Source="line.png"
+            SemanticProperties.Description="line"
+            HeightRequest="100"
+            WidthRequest="60"
+            HorizontalOptions="CenterAndExpand"/>
+            <!-- <Line X1="60"
+                  Y1="0"
+                  X2="60"
+                  Y2="120"
+                  HorizontalOptions="Start"
+                  Stroke="White"
+                  StrokeDashArray="1,1"
+                  StrokeDashOffset="6" /> -->
+       <Label FontSize="15"
+             HorizontalOptions="Start"
+             TextColor="#DADADA"
+             Text="Review"
+             Margin="10"/>
+            
+                <Frame 
+           HorizontalOptions="StartAndExpand"
+           BackgroundColor="Transparent"
+           BorderColor="#2D1F30"
+           CornerRadius="5"
+           Padding="5"
+           HeightRequest="45"
+           WidthRequest="280">
+                    <Entry TextColor="Grey"
+               Placeholder="Write a comment..."
+               PlaceholderColor="Gray" />
+                </Frame>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <!-- For the Image -->
+                    <ColumnDefinition Width="*" />
+                    <!-- For the Frame and Label -->
+                </Grid.ColumnDefinitions>
+                <Image
+         Source="rr.png"
+         Margin="10"
+         HeightRequest="40"
+         WidthRequest="40"
+         HorizontalOptions="StartAndExpand" />
+                <Label Grid.Column="1"
+        Margin="10"
+        FontSize="15"
+        HorizontalOptions="Start"
+        TextColor="#DADADA"
+        Text="12-19-02 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis." />
+            </Grid>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
